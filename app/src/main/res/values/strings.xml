@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Citas Medicas</string>
+    <string name="bienvenido">Bienvenido!</string>
+    <string name="paciente">Paciente</string>
+    <string name="m_dico">Médico</string>
+    <string name="administrador">Administrador</string>
+    <string name="acceder">Acceder</string>
+</resources>

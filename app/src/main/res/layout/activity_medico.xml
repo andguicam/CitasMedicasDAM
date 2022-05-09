@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicoActivity">
+
+    <Button
+        android:id="@+id/verCitasButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VER CITAS"
+        android:onClick="onVerCitas"
+        />
+
+    <Button
+        android:id="@+id/agregarButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Cita"
+        android:onClick="onAgregarCita"
+        android:layout_below="@id/verCitasButton2"
+        />
+
+    <Button
+        android:id="@+id/eliminarButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar cita"
+        android:onClick="onEliminarCita"
+        android:layout_below="@id/agregarButton2" />
+
+</RelativeLayout>
