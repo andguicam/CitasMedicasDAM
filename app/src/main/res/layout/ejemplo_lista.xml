@@ -31,6 +31,23 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="0dp" />
 
+        <Button
+            android:id="@+id/eliminarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onEliminar"
+            android:text="Eliminar"
+            app:layout_constraintTop_toBottomOf="@+id/modificarbutton"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/modificarbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onModificar"
+            android:text="Modificar"
+            app:layout_constraintTop_toBottomOf="@+id/agregarButton"
+            tools:layout_editor_absoluteX="-16dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

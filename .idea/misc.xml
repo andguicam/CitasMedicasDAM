@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/andre/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin.xml" value="0.25" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin_2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin_detalle.xml" value="0.5" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin_detalle2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_agregar_usuario.xml" value="0.33" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_modificar_usuario.xml" value="0.5" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/ejemplo_detalle.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/ejemplo_lista.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/test.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/layout/activity_admin.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_agregar_cita.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_agregar_usuario.xml" value="0.26510416666666664" />
