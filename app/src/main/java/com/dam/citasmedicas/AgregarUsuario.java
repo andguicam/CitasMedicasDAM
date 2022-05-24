@@ -30,14 +30,14 @@ public class AgregarUsuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_usuario);
 
-        nombre=(EditText) findViewById(R.id.activity_agregar_nombre);
-        apellidos=(EditText) findViewById(R.id.activity_agregar_apellidos);
-        fechaNac=(EditText) findViewById(R.id.activity_agregar_fechaNac);
+        nombre=(EditText) findViewById(R.id.activity_medico_detalle_id);
+        apellidos=(EditText) findViewById(R.id.activity_medico_detalle_inicio);
+        fechaNac=(EditText) findViewById(R.id.activity_medico_detalle_fin);
         tipo=(EditText) findViewById(R.id.activity_agregar_tipo);
         direccion=(EditText) findViewById(R.id.activity_agregar_direccion);
         password=(EditText) findViewById(R.id.activity_agregar_password);
         email=(EditText) findViewById(R.id.activity_agregar_email);
-        dni=(EditText) findViewById(R.id.activity_agregar_dni);
+        dni=(EditText) findViewById(R.id.activity_medico_detalle_consulta);
 
         nombre.setText("Nombre");
         apellidos.setText("Apellidos");

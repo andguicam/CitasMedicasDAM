@@ -6,14 +6,11 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -25,10 +22,7 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 public class AdminActivity extends AppCompatActivity {
@@ -57,12 +51,12 @@ public class AdminActivity extends AppCompatActivity {
 
         final String URL = direccion + "obtenerUsuarios";
         final ProgressDialog dlg = ProgressDialog.show(this,
-                "Obteniendo los datos",
+                "Obteniendo los usuarios",
                 "Por favor, espere...", true);
 
         List<String> al = new ArrayList<String>();
         setContentView(R.layout.activity_admin);
-        ListView lv = (ListView) findViewById(R.id.lista_admin);
+        ListView lv = (ListView) findViewById(R.id.lista_medico);
         Context contexto = this;
 
         // prepare the Request

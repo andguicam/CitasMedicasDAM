@@ -18,11 +18,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 //TODO: representar fechas bien
 public class ModificarUsuario extends AppCompatActivity {
     private String nombre_s;
@@ -66,11 +61,11 @@ public class ModificarUsuario extends AppCompatActivity {
         tipo_s = (String) getIntent().getExtras().get("tipo").toString();
         email_s = (String) getIntent().getExtras().get("email").toString();
 
-        nombre=(TextView)findViewById(R.id.activity_agregar_nombre);
-        apellidos=(TextView) findViewById(R.id.activity_agregar_apellidos);
-        fechaNac=(TextView) findViewById(R.id.activity_agregar_fechaNac);
+        nombre=(TextView)findViewById(R.id.activity_medico_detalle_id);
+        apellidos=(TextView) findViewById(R.id.activity_medico_detalle_inicio);
+        fechaNac=(TextView) findViewById(R.id.activity_medico_detalle_fin);
         password=(TextView) findViewById(R.id.activity_agregar_password);
-        dni=(TextView) findViewById(R.id.activity_agregar_dni);
+        dni=(TextView) findViewById(R.id.activity_medico_detalle_consulta);
         direccion=(TextView) findViewById(R.id.activity_agregar_direccion);
         tipo=(TextView) findViewById(R.id.activity_agregar_tipo);
         email=(TextView) findViewById(R.id.activity_agregar_email);

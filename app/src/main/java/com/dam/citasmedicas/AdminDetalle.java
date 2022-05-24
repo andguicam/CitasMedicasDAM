@@ -36,11 +36,11 @@ public class AdminDetalle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_detalle);
-        nombre=(TextView)findViewById(R.id.activity_agregar_nombre);
-        apellidos=(TextView) findViewById(R.id.activity_agregar_apellidos);
-        fechaNac=(TextView) findViewById(R.id.activity_agregar_fechaNac);
+        nombre=(TextView)findViewById(R.id.activity_medico_detalle_id);
+        apellidos=(TextView) findViewById(R.id.activity_medico_detalle_inicio);
+        fechaNac=(TextView) findViewById(R.id.activity_medico_detalle_fin);
         password=(TextView) findViewById(R.id.activity_agregar_password);
-        dni=(TextView) findViewById(R.id.activity_agregar_dni);
+        dni=(TextView) findViewById(R.id.activity_medico_detalle_consulta);
         direccion=(TextView) findViewById(R.id.activity_agregar_direccion);
         tipo=(TextView) findViewById(R.id.activity_agregar_tipo);
         email=(TextView) findViewById(R.id.activity_agregar_email);

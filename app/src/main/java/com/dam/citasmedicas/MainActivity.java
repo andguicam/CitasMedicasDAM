@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (this.rol.equals("medico")){
             Intent medicoIntent = new Intent(this, MedicoActivity.class);
+            //Para que el medico solo vea las suyas descomentar lo de debajo
+            medicoIntent.putExtra("dni",dni.getText().toString());
             startActivity( medicoIntent);
         }
     }

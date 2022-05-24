@@ -58,10 +58,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/activity_agregar_dni" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_medico_detalle_consulta" />
 
     <EditText
-        android:id="@+id/activity_agregar_dni"
+        android:id="@+id/activity_medico_detalle_consulta"
         android:layout_width="265dp"
         android:layout_height="48dp"
         android:layout_marginStart="100dp"
@@ -72,10 +72,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/activity_agregar_fechaNac" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_medico_detalle_fin" />
 
     <EditText
-        android:id="@+id/activity_agregar_apellidos"
+        android:id="@+id/activity_medico_detalle_inicio"
         android:layout_width="265dp"
         android:layout_height="48dp"
         android:layout_marginStart="64dp"
@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/activity_agregar_nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_medico_detalle_id" />
 
     <TextView
         android:id="@+id/textView2"
@@ -122,7 +122,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/activity_agregar_nombre"
+        android:id="@+id/activity_medico_detalle_id"
         android:layout_width="263dp"
         android:layout_height="48dp"
         android:layout_marginStart="72dp"
@@ -136,7 +136,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/activity_agregar_fechaNac"
+        android:id="@+id/activity_medico_detalle_fin"
         android:layout_width="266dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -146,7 +146,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/activity_agregar_apellidos" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_medico_detalle_inicio" />
 
     <Button
         android:id="@+id/admin_agregar_boton_agregar"
