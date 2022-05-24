@@ -14,6 +14,30 @@ public class MedicoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_medico);
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public void onVerCitas(View view) {
         Intent verCitasIntent = new Intent(this, VerCitasMedico.class);
         startActivity(verCitasIntent);

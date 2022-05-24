@@ -32,10 +32,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class AdminActivity extends AppCompatActivity {
-    private ListView lv;
-    public List<Usuario> lista=null;
-    //private ArrayAdapter arrayAdapter;
-   // AccesoREST accesoREST;
+    //Esta variable direccion se usa para todas las operaciones del administrador y del medico
     public static final String direccion = "http://192.168.0.196:8080/";
 
 
@@ -58,13 +55,11 @@ public class AdminActivity extends AppCompatActivity {
 
     public void obtenerUsuarios() {
 
-        List<Usuario> listausers = new ArrayList<Usuario>();
         final String URL = direccion + "obtenerUsuarios";
         final ProgressDialog dlg = ProgressDialog.show(this,
                 "Obteniendo los datos",
                 "Por favor, espere...", true);
 
-        ArrayAdapter<String> arrayAdapter;
         List<String> al = new ArrayList<String>();
         setContentView(R.layout.activity_admin);
         ListView lv = (ListView) findViewById(R.id.lista_admin);
