@@ -61,7 +61,6 @@ public class AgregarUsuario extends AppCompatActivity {
                 "Agregando el usuario",
                 "Por favor, espere...", true);
 
-        // prepare the Request
         StringRequest getRequest = new StringRequest(Request.Method.GET, URL,
                 new Response.Listener<String>() {
 

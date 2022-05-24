@@ -40,7 +40,6 @@ public class AdminActivity extends AppCompatActivity {
 
 
     public AdminActivity(){
-        //accesoREST=new AccesoREST();
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,82 +47,13 @@ public class AdminActivity extends AppCompatActivity {
 
         obtenerUsuarios();
 
-        //ARRAY SACADO DE BBDD, usando AccesoREST.java. Se ponen datos en fila y subfila.
-        //Fila: Nombre usuario
-        //Subfila: DNI, tipo usuario
-        //List<Usuario> lista = obtenerUsuarios();
-
-        //Onclick: Abre la vista detallada (por hacer)
-
-
-
-//        lv.setOnItemClickListener(
-//                new OnItemClickListener()
-//                {
-//                    @Override
-//                    public void onItemClick(AdapterView<?> arg0, View view,
-//                                            int position, long id) {
-//
-//                        //Take action here.
-//                    }
-//                }
-//        );
-
-
-
-//        lv.setOnClickListener(new AdapterView.onClickListener(){
-//            @Override
-//            public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
-//                Intent appInfo = new Intent(YourActivity.this, ApkInfoActivity.class);
-//                startActivity(appInfo);
-//            }
-//        });
 
     }
-/*    @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
-        String item = (String) l.getItemAtPosition(position);
-
-        Intent intent = new Intent(this,AdminDetalle.class);
-        intent.putExtra("item",item);
-        startActivity(intent);
-        //con la posicion podemos identificar el usuario en el array.
-        //simplemente sacamos la clase usuario de ahi y la pasamos a la nueva actividad
-
-
-    }*/
-
-//    @Override
-    //al hacer tap en algun elemento de la vista, setea el texto del elemento en el nuevo fragment
-//    public void onListItemClick(ListView l, View v, int position, long id) {
-//        String user = (String) l.getItemAtPosition(position);
-        //Le pasa a la nueva actividad el intent
-        //Crea nueva actividad
-//        Intent intent = new Intent(getActivity().getApplicationContext(), DetailActivity.class);
-        //con la posicion podemos identificar el usuario en el array.
-        //simplemente sacamos la clase usuario de ahi y la pasamos a la nueva actividad
-
-        //para paso de parametros??
-//        intent.putExtra("value", item);
-//        startActivity(intent);
-        //Desde la nueva actividad se hacen las operaciones necesarias.
-//    }
-
 
     public void onAgregar(View view) {
         Intent agregarIntent = new Intent(this, AgregarUsuario.class);
         startActivity(agregarIntent);
     }
-
-    /*public void onEliminar(View view) {
-        Intent eliminarIntent = new Intent(this, EliminarUsuario.class);
-        startActivity(eliminarIntent);
-    }
-
-    public void onModificar(View view) {
-        Intent modificarIntent = new Intent(this, ModificarUsuario.class);
-        startActivity(modificarIntent);
-    }*/
 
 
     public void obtenerUsuarios() {
@@ -182,6 +112,5 @@ public class AdminActivity extends AppCompatActivity {
                 }
         );
         ColaServiciosWeb.getInstance(this).addToRequestQueue(getRequest);
-        //Singleton.getInstance(this).addToRequestQueue(getRequest);
     }
 }
