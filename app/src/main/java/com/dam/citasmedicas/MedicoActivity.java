@@ -35,8 +35,6 @@ public class MedicoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //TODO: descomentar la linea inferior y los comentarios en los parametros si queremos que el
-        //medico solo pueda ver sus citas
         dni = getIntent().getExtras().get("dni").toString();
         obtenerCitas(dni);
 

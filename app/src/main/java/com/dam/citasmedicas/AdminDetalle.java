@@ -80,7 +80,7 @@ public class AdminDetalle extends AppCompatActivity {
                             direccion.setText(response.getString("direccion"));
                             tipo.setText(response.getString("tipo_usuario"));
                             //TODO: email
-                            email.setText("emailDeEjemplo@email.es");
+                            email.setText(response.getString("email"));
 
                         }
                         catch (Exception e){
@@ -126,7 +126,6 @@ public class AdminDetalle extends AppCompatActivity {
                             public void onResponse(String response) {
                                 try{
                                     dlg.dismiss();
-                                    //TODO: probar si esta linea funciona
                                     Boolean bool = Boolean.parseBoolean(response.substring(0,10));
                                     if (bool){
                                         Toast.makeText(AdminDetalle.this,"Usuario eliminado correctamente",Toast.LENGTH_SHORT).show();

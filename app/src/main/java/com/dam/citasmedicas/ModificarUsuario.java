@@ -112,7 +112,7 @@ public class ModificarUsuario extends AppCompatActivity {
                 //TODO: comprobar que funciona cuando tenga el email
                 final String URL = AdminActivity.direccion + "modificarUsuario?tipo_ant="+tipo_s+"&dni_ant="+dni_s+"&dni_nuevo="+dni_nuevo.getText().toString()+"&nombre="+nombre_nuevo.getText().toString()+
                         "&apellidos="+apellidos_nuevo.getText().toString()+"&password="+password_nuevo.getText().toString()+"&fecha="+fechaNac_nuevo.getText().toString()+"&direccion="+direccion_nuevo.getText().toString()+
-                        "&tipo="+tipo_nuevo.getText().toString();
+                        "&tipo="+tipo_nuevo.getText().toString()+"&email="+email_nuevo.getText().toString();
 
                 final ProgressDialog dlg = ProgressDialog.show(ModificarUsuario.this,
                         "Modificando el usuario",
