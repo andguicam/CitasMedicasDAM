@@ -39,7 +39,7 @@ public class MedicoAgregarCita extends AppCompatActivity {
 
     public void onAgregarCita(View v){
 
-        final String URL = AdminActivity.direccion + "agregarCita?&fechaInicio="+inicio.getText().toString()+"&fechaFin="+fin.getText().toString()+
+        final String URL = AdminActivity.direccion_citas + "agregarCita?&fechaInicio="+inicio.getText().toString()+"&fechaFin="+fin.getText().toString()+
                 "&consulta="+consulta.getText().toString()+"&dniMedico="+dni;
 
         final ProgressDialog dlg = ProgressDialog.show(MedicoAgregarCita.this,

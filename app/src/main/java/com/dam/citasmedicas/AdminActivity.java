@@ -27,7 +27,8 @@ import java.util.List;
 
 public class AdminActivity extends AppCompatActivity {
     //Esta variable direccion se usa para todas las operaciones del administrador y del medico
-    public static final String direccion = "http://192.168.0.196:8080/";
+    public static final String direccion = "https://sdyswusuarios.duckdns.org/";
+    public static final String direccion_citas = "https://sdyswcitas.duckdns.org/";
 
 
     public AdminActivity(){

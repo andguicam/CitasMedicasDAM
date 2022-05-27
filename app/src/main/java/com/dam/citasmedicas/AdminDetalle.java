@@ -126,12 +126,15 @@ public class AdminDetalle extends AppCompatActivity {
                             public void onResponse(String response) {
                                 try{
                                     dlg.dismiss();
-                                    Boolean bool = Boolean.parseBoolean(response.substring(0,10));
+                                    Boolean bool = Boolean.parseBoolean(response.toString());
                                     if (bool){
                                         Toast.makeText(AdminDetalle.this,"Usuario eliminado correctamente",Toast.LENGTH_SHORT).show();
                                     }else{
                                         Toast.makeText(AdminDetalle.this,"Error al eliminar el usuario",Toast.LENGTH_SHORT).show();
                                     }
+                                    //Volvemos atras automaticamente, actualizando el nuevo usuario
+                                    Intent intent = new Intent(AdminDetalle.this,AdminActivity.class);
+                                    startActivity(intent);
 
                                 }
                                 catch (Exception e){

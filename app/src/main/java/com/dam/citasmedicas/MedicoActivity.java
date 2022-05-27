@@ -27,7 +27,8 @@ import java.util.List;
 
 public class MedicoActivity extends AppCompatActivity {
     //Esta variable direccion se usa para todas las operaciones del administrador y del medico
-    public static final String direccion = "http://192.168.0.196:8080/";
+    public static final String direccion = "https://sdyswusuarios.duckdns.org/";
+    public static final String direccion_citas = "https://sdyswcitas.duckdns.org/";
     private String dni;
 
     public MedicoActivity(){
@@ -50,7 +51,7 @@ public class MedicoActivity extends AppCompatActivity {
 
     public void obtenerCitas(String dni) {
 
-        final String URL = direccion + "obtenerListaCitas";
+        final String URL = direccion_citas + "obtenerListaCitasMedico?dniMedico="+dni;
         final ProgressDialog dlg = ProgressDialog.show(this,
                 "Obteniendo las citas",
                 "Por favor, espere...", true);
@@ -70,9 +71,7 @@ public class MedicoActivity extends AppCompatActivity {
 
                             for (int i = 0; i<response.length();i++) {
                                 JSONObject ob = response.getJSONObject(i);
-                                //TODO: Descomentar en caso de que el medico solo pueda ver sus propias citas
-                                if (ob.getJSONObject("medicoResponsable").getString("dni").equals(dni))
-                                    al.add("Inicio: "+ob.getString("fechaInicio") +" | Fin: " + ob.getString("fechaFin")+" | Consulta: "+ob.getString("consulta")+" | ID:"+ob.getString("id"));
+                                al.add("Inicio: "+ob.getString("fechaInicio") +" | Fin: " + ob.getString("fechaFin")+" | Consulta: "+ob.getString("consulta")+" | ID:"+ob.getString("id"));
                             }
                             ArrayAdapter arrayAdapter = new ArrayAdapter<String>(contexto, android.R.layout.simple_list_item_1, al);
                             lv.setAdapter(arrayAdapter);
