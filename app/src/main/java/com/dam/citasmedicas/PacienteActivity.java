@@ -251,7 +251,7 @@ public class PacienteActivity extends AppCompatActivity {
     private void obtenerCitasDisponibles() {
         List<Cita> lista = null;
         String direccion = "https://sdyswcitas.duckdns.org/";
-        final String URL = direccion + "citasDisponibles";
+        final String URL = direccion + "citasDisponibles?dniPaciente="+dniPaciente;
 
         // prepare the Request
         JsonArrayRequest getRequest = new JsonArrayRequest(Request.Method.GET, URL, null,
