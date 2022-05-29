@@ -20,6 +20,8 @@ import com.android.volley.toolbox.StringRequest;
 
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+
 //TODO: representar fechas bien
 public class AdminDetalle extends AppCompatActivity {
     private String[] datos;
@@ -31,7 +33,8 @@ public class AdminDetalle extends AppCompatActivity {
     private TextView password;
     private TextView email;
     private TextView dni;
-
+    private String lineas[];
+    String[] aux;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,12 +49,16 @@ public class AdminDetalle extends AppCompatActivity {
         email=(TextView) findViewById(R.id.activity_agregar_email);
 
         String user = (String) getIntent().getExtras().get("item");
-
+        String nombre;
+        String tipo;
+        String dni;
         //0: Nombre y apellidos
         //1: tipo de usuario
         //2: DNI
-        datos = user.split("[,]",0);
-
+        nombre=(String) getIntent().getExtras().get("nombre");
+        tipo=(String) getIntent().getExtras().get("tipo");
+        dni= (String) getIntent().getExtras().get("dni");
+        datos= new String[]{nombre, tipo, dni};
         obtenerUsuario(datos);
     }
 
@@ -74,7 +81,7 @@ public class AdminDetalle extends AppCompatActivity {
 
                             nombre.setText(response.getString("nombre"));
                             apellidos.setText(response.getString("apellidos"));
-                            fechaNac.setText(response.getString("fechaDeNacimiento"));
+                            fechaNac.setText(response.getString("fechaDeNacimiento").substring(0, 10));
                             password.setText(response.getString("password"));
                             dni.setText(response.getString("dni"));
                             direccion.setText(response.getString("direccion"));

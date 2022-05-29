@@ -2,6 +2,7 @@ package com.dam.citasmedicas;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class Cita implements Serializable{
     private static final long serialVersionUID = 1L;
@@ -61,8 +62,8 @@ public class Cita implements Serializable{
     
     public String toString () {
     	
-    	return this.fechaInicio +
-    			" en "+ this.consulta +
-    			" con " + this.medicoResponsable.getNombre() + " " + this.medicoResponsable.getApellidos();
+    	return  "Fecha: " + new SimpleDateFormat("dd/MM/yyyy HH:mm").format(this.fechaInicio) + "\n" +
+                "Consulta: "+ this.consulta + "\n" +
+    			"Medico: " + this.medicoResponsable.getNombre() + " " + this.medicoResponsable.getApellidos();
     }
 }

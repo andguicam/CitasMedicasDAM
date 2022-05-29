@@ -20,8 +20,10 @@ import com.android.volley.toolbox.JsonArrayRequest;
 
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -71,7 +73,10 @@ public class MedicoActivity extends AppCompatActivity {
 
                             for (int i = 0; i<response.length();i++) {
                                 JSONObject ob = response.getJSONObject(i);
-                                al.add("Inicio: "+ob.getString("fechaInicio") +" | Fin: " + ob.getString("fechaFin")+" | Consulta: "+ob.getString("consulta")+" | ID:"+ob.getString("id"));
+
+                                al.add("Inicio: "+ob.getString("fechaInicio").substring(0, 10) +" "+ ob.getString("fechaInicio").substring(11, 16) +"\nFin:     " +
+                                        ob.getString("fechaFin").substring(0, 10) +" "+ ob.getString("fechaFin").substring(11, 16)+"\nConsulta: "
+                                        +ob.getString("consulta"));
                             }
                             ArrayAdapter arrayAdapter = new ArrayAdapter<String>(contexto, android.R.layout.simple_list_item_1, al);
                             lv.setAdapter(arrayAdapter);
@@ -82,8 +87,14 @@ public class MedicoActivity extends AppCompatActivity {
                                     String selectedItem = (String) parent.getItemAtPosition(position);
 
                                     Intent intent = new Intent(contexto,MedicoDetalle.class);
-                                    intent.putExtra("item",selectedItem);
-                                    startActivity(intent);
+                                    try {
+                                        intent.putExtra("id",response.getJSONObject(position).getString("id"));
+                                        startActivity(intent);
+
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+
                                 }
                             });
 

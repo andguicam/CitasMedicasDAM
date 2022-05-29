@@ -21,7 +21,6 @@ import com.android.volley.toolbox.StringRequest;
 import org.json.JSONObject;
 
 public class MedicoDetalle extends AppCompatActivity {
-    private TextView id;
     private TextView inicio;
     private TextView fin;
     private TextView responsable;
@@ -31,18 +30,14 @@ public class MedicoDetalle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medico_detalle);
-        id = (TextView) findViewById(R.id.activity_medico_detalle_id);
         inicio = (TextView) findViewById(R.id.activity_medico_detalle_inicio);
         fin = (TextView) findViewById(R.id.activity_medico_detalle_fin);
         responsable = (TextView) findViewById(R.id.activity_medico_detalle_responsable);
         consulta = (TextView) findViewById(R.id.activity_medico_detalle_consulta);
 
-        String extra = (String) getIntent().getExtras().get("item");
-        //El ID de la cita estara el ultimo
-        String[] datos = extra.split("[:]", 0);
-        id_cita = datos[datos.length - 1];
+        id_cita = (String) getIntent().getExtras().get("id");
 
-        final String URL = AdminActivity.direccion + "obtenerCita?idCita=" + id_cita;
+        final String URL = AdminActivity.direccion_citas + "obtenerCita?idCita=" + id_cita;
 
         final ProgressDialog dlg = ProgressDialog.show(this,
                 "Obteniendo los datos de la cita",
@@ -57,9 +52,10 @@ public class MedicoDetalle extends AppCompatActivity {
                         try {
                             dlg.dismiss();
 
-                            id.setText(response.getString("id"));
-                            inicio.setText(response.getString("fechaInicio"));
-                            fin.setText(response.getString("fechaFin"));
+                            inicio.setText(response.getString("fechaInicio").substring(0, 10) +" "+
+                                    response.getString("fechaInicio").substring(11, 16));
+                            fin.setText(response.getString("fechaFin").substring(0, 10) +" "+
+                                    response.getString("fechaFin").substring(11, 16));
                             responsable.setText(response.getJSONObject("medicoResponsable").getString("nombre") + " " + response.getJSONObject("medicoResponsable").getString("apellidos"));
                             consulta.setText(response.getString("consulta"));
 

@@ -20,6 +20,7 @@ import com.android.volley.toolbox.JsonArrayRequest;
 
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -71,7 +72,7 @@ public class AdminActivity extends AppCompatActivity {
 
                             for (int i = 0; i<response.length();i++) {
                                 JSONObject ob = response.getJSONObject(i);
-                                al.add(ob.getString("nombre") + " "+ob.getString("apellidos")+", " + ob.getString("tipo_usuario")+", "+ob.getString("dni"));
+                                al.add("Nombre: "+ob.getString("nombre") + " "+ob.getString("apellidos")+"\nTipo: " + ob.getString("tipo_usuario")+"\nDNI: "+ob.getString("dni"));
                             }
                             ArrayAdapter arrayAdapter = new ArrayAdapter<String>(contexto, android.R.layout.simple_list_item_1, al);
                             lv.setAdapter(arrayAdapter);
@@ -81,8 +82,18 @@ public class AdminActivity extends AppCompatActivity {
                                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                                     String selectedItem = (String) parent.getItemAtPosition(position);
                                     Intent intent = new Intent(contexto,AdminDetalle.class);
-                                    intent.putExtra("item",selectedItem);
-                                    startActivity(intent);
+
+                                    JSONObject ob = null;
+                                    try {
+                                        ob = response.getJSONObject(position);
+                                        intent.putExtra("nombre",ob.getString("nombre")+" "+ob.getString("apellidos"));
+                                        intent.putExtra("dni",ob.getString("dni"));
+                                        intent.putExtra("tipo",ob.getString("tipo_usuario"));
+                                        startActivity(intent);
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+
                                 }
                             });
 
