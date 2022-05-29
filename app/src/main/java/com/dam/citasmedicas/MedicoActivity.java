@@ -89,6 +89,7 @@ public class MedicoActivity extends AppCompatActivity {
                                     Intent intent = new Intent(contexto,MedicoDetalle.class);
                                     try {
                                         intent.putExtra("id",response.getJSONObject(position).getString("id"));
+                                        intent.putExtra("dni",dni);
                                         startActivity(intent);
 
                                     } catch (JSONException e) {

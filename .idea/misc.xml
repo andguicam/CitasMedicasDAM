@@ -9,7 +9,7 @@
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin_detalle.xml" value="0.5" />
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin_detalle2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_agregar_cita.xml" value="0.5" />
-        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_agregar_usuario.xml" value="0.33" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_agregar_usuario.xml" value="1.0" />
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_medico.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_medico_agregar_cita.xml" value="0.36666666666666664" />
@@ -18,6 +18,8 @@
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_paciente.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/ejemplo_detalle.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/ejemplo_lista.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/paciente_citas_concedidas_items.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/paciente_citas_disponibles_items.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/test.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/layout/activity_admin.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_agregar_cita.xml" value="0.28229166666666666" />

@@ -48,7 +48,6 @@ public class AdminDetalle extends AppCompatActivity {
         tipo=(TextView) findViewById(R.id.activity_agregar_tipo);
         email=(TextView) findViewById(R.id.activity_agregar_email);
 
-        String user = (String) getIntent().getExtras().get("item");
         String nombre;
         String tipo;
         String dni;

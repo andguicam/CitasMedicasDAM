@@ -26,6 +26,7 @@ public class MedicoDetalle extends AppCompatActivity {
     private TextView responsable;
     private TextView consulta;
     private String id_cita;
+    private String dni;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +37,7 @@ public class MedicoDetalle extends AppCompatActivity {
         consulta = (TextView) findViewById(R.id.activity_medico_detalle_consulta);
 
         id_cita = (String) getIntent().getExtras().get("id");
+        dni = (String) getIntent().getExtras().get("dni");
 
         final String URL = AdminActivity.direccion_citas + "obtenerCita?idCita=" + id_cita;
 
@@ -84,7 +86,7 @@ public class MedicoDetalle extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
-                final String URL = AdminActivity.direccion + "eliminarCita?idCita="+id_cita;
+                final String URL = AdminActivity.direccion_citas + "eliminarCita?idCita="+id_cita;
 
                 final ProgressDialog dlg = ProgressDialog.show(MedicoDetalle.this,
                         "Eliminando la cita",
@@ -103,8 +105,9 @@ public class MedicoDetalle extends AppCompatActivity {
                                     }else{
                                         Toast.makeText(MedicoDetalle.this,"Error al eliminar la cita",Toast.LENGTH_SHORT).show();
                                     }
-                                    Intent intent = new Intent(MedicoDetalle.this,MedicoActivity.class);
-                                    startActivity(intent);
+                                    Intent intentvuelta = new Intent(MedicoDetalle.this,MedicoActivity.class);
+                                    intentvuelta.putExtra("dni",dni);
+                                    startActivity(intentvuelta);
                                 }
                                 catch (Exception e){
                                     e.printStackTrace();
