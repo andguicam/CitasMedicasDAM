@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/andre/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin.xml" value="0.25" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin_2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin_detalle.xml" value="0.5" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_admin_detalle2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_agregar_cita.xml" value="0.5" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_agregar_usuario.xml" value="1.0" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_medico.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_medico_agregar_cita.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_medico_detalle.xml" value="0.9" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_modificar_usuario.xml" value="0.67" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/activity_paciente.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/ejemplo_detalle.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/ejemplo_lista.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/paciente_citas_concedidas_items.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/paciente_citas_disponibles_items.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/Documents/GitHub/CitasMedicasDAM/app/src/main/res/layout/test.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/layout/activity_admin.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_agregar_cita.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_agregar_usuario.xml" value="0.26510416666666664" />
+        <entry key="app/src/main/res/layout/activity_anular_cita.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_eliminar_citas.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_eliminar_usuario.xml" value="0.26510416666666664" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_medico.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_modificar_usuario.xml" value="0.13703703703703704" />
+        <entry key="app/src/main/res/layout/activity_paciente.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_reservar_cita.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_ver_citas.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_ver_citas_medico.xml" value="0.28229166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
