@@ -18,7 +18,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 
-//TODO: representar fechas bien
 public class ModificarUsuario extends AppCompatActivity {
     private String nombre_s;
     private String apellidos_s;
@@ -102,14 +101,12 @@ public class ModificarUsuario extends AppCompatActivity {
 
 
     public void onConfirmar(View view) {
-        //TODO: probar este metodo por completo cuando tenga la base de datos con email actualizada
         AlertDialog.Builder alertBuilder = new AlertDialog.Builder(ModificarUsuario.this);
         alertBuilder.setTitle("¿Modificar usuario?");
         alertBuilder.setMessage("¿Está seguro de que desea modificar el usuario? Los datos anteriores se perderán");
         alertBuilder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                //TODO: comprobar que funciona cuando tenga el email
                 final String URL = AdminActivity.direccion + "modificarUsuario?tipo_ant="+tipo_s+"&dni_ant="+dni_s+"&dni_nuevo="+dni_nuevo.getText().toString()+"&nombre="+nombre_nuevo.getText().toString()+
                         "&apellidos="+apellidos_nuevo.getText().toString()+"&password="+password_nuevo.getText().toString()+"&fecha="+fechaNac_nuevo.getText().toString()+"&direccion="+direccion_nuevo.getText().toString()+
                         "&tipo="+tipo_nuevo.getText().toString()+"&email="+email_nuevo.getText().toString();
@@ -118,7 +115,6 @@ public class ModificarUsuario extends AppCompatActivity {
                         "Modificando el usuario",
                         "Por favor, espere...", true);
 
-                // prepare the Request
                 StringRequest getRequest = new StringRequest(Request.Method.GET, URL,
                         new Response.Listener<String>() {
 
@@ -126,7 +122,6 @@ public class ModificarUsuario extends AppCompatActivity {
                             public void onResponse(String response) {
                                 try{
                                     dlg.dismiss();
-                                    //TODO: da fallo en la fecha, no lo pilla bien
                                     Boolean bool = Boolean.parseBoolean(response.toString());
                                     if (bool){
                                         Toast.makeText(ModificarUsuario.this,"Usuario modificado correctamente",Toast.LENGTH_SHORT).show();

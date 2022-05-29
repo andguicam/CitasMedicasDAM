@@ -52,7 +52,6 @@ public class AgregarUsuario extends AppCompatActivity {
     }
 
     public void onAgregarUsuario(View v){
-        //TODO: comprobar que funciona cuando tenga el email
         final String URL = AdminActivity.direccion + "agregarUsuario?&dni="+dni.getText().toString()+"&nombre="+nombre.getText().toString()+
                 "&apellidos="+apellidos.getText().toString()+"&password="+password.getText().toString()+"&fecha="+fechaNac.getText().toString()+"&direccion="+direccion.getText().toString()+
                 "&tipo="+tipo.getText().toString()+"&email="+email.getText().toString();
@@ -68,7 +67,6 @@ public class AgregarUsuario extends AppCompatActivity {
                     public void onResponse(String response) {
                         try{
                             dlg.dismiss();
-                            //TODO: comprobar fecha
                             Boolean bool = Boolean.parseBoolean(response.toString());
                             if (bool){
                                 Toast.makeText(AgregarUsuario.this,"Usuario añadido correctamente",Toast.LENGTH_SHORT).show();

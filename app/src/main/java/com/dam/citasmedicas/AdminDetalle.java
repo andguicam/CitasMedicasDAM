@@ -22,7 +22,6 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 
-//TODO: representar fechas bien
 public class AdminDetalle extends AppCompatActivity {
     private String[] datos;
     private TextView nombre;
@@ -85,7 +84,6 @@ public class AdminDetalle extends AppCompatActivity {
                             dni.setText(response.getString("dni"));
                             direccion.setText(response.getString("direccion"));
                             tipo.setText(response.getString("tipo_usuario"));
-                            //TODO: email
                             email.setText(response.getString("email"));
 
                         }
@@ -110,7 +108,6 @@ public class AdminDetalle extends AppCompatActivity {
     }
 
     public void onEliminar(View view) {
-    //TODO: probar este metodo por completo cuando tenga la base de datos con email actualizada
         AlertDialog.Builder alertBuilder = new AlertDialog.Builder(AdminDetalle.this);
         alertBuilder.setTitle("¿Eliminar usuario?");
         alertBuilder.setMessage("¿Está seguro de que desea eliminar el usuario? Esta acción es irreversible");
